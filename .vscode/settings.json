@@ -1,13 +1,20 @@
 {
   "python.pythonPath": "${workspaceFolder}/env/bin/python3",
   "editor.formatOnSave": true,
-  "python.linting.pycodestyleEnabled": true,
+  "python.linting.pycodestyleEnabled": false,
   "python.linting.pylintEnabled": true,
   "python.linting.pylintPath": "pylint",
-  "python.linting.pylintArgs": ["W0614", "--load-plugins", "pylint_django"],
+  "python.linting.pylintArgs": ["W0614", "--load-plugins", "pylint_django", "--disable=C0111",  "pylint_django.checkers.migrations",
+  "--disable=C0114, C0115, W0222",
+  "--disable=imported-auth-user",
+  "--disable=invalid-name",
+  "--disable=line-too-long", "--disable=django-not-configured", "--disable=django-not-configured",
+  "--django-settings-module=<mainapp>.settings"],
   "python.venvPath": "${workspaceFolder}/env/bin/python3",
   "python.linting.pycodestyleArgs": ["--ignore=E501"],
   "files.exclude": {
     "**/*.pyc": true
-  }
+  },
+  "python.linting.enabled": true
+
 }
