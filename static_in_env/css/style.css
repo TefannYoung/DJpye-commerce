@@ -18,6 +18,20 @@ body,
   .carousel {
     height: 100%; } }
 
+/* social media icons styling */
+.social-icons {
+  font-size: 36px;
+  cursor: pointer;
+}
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-youtube:hover{
+  color: #008000;
+}
+.fab {
+  color: #000000;
+}
+
 /* Footer color for sake of consistency with Navbar */
 .page-footer {
-  background-color: #929FBA; }
+  background-color: #929FBA; 
+  text-align: center;
+}
